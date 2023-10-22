@@ -1,11 +1,29 @@
 import pygame 
 import random
 import copy
+from PyQt5.QtWidgets import (QApplication,QWidget,QLabel,QPushButton,QVBoxLayout)
+from PyQt5.QtCore import Qt
 
 pygame.init()
-
+app = QApplication([])
+button = QPushButton("жмяк")
+line = QVBoxLayout()
 I_max = 11
 J_max = 21
+
+
+#window = QWidget()
+#window.setLayout(line)
+#window.setWindowTitle("Tetris Menu")
+#window.resize(400,300)
+#window.show()
+#lb1 = QLabel("Вітаю! Це гра під назвую тетріс. Натисни на кнопку щоб розпочати гру")
+#line.addWidget(lb1,alignment=Qt.AlignCenter)
+#line.addWidget(button,alignment=Qt.AlignCenter)
+#button.clicked.connect(button1)
+
+pygame.mixer_music.load("123.ogg")
+pygame.mixer_music.play(-1)
 
 screen_x = 300
 screen_y = 600
